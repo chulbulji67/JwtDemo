@@ -2,6 +2,8 @@ package com.jwt.jwtDemo.entity;
 
 import lombok.*;
 
+import java.util.List;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -10,5 +12,6 @@ import lombok.*;
 @ToString
 public class JwtRes {
     private String jwtToken;
-    private String usernaem;
+    private String username;
+    private List<String> roles;
 }
